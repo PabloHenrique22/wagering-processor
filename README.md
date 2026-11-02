@@ -33,9 +33,10 @@ src
     └── use-cases
         └── process-wager
             └── ProcessWagerUseCase
+```
 
-Domain Design
-Money (Value Object)
+## Domain Design
+## Money (Value Object)
 Responsible for monetary operations and financial rules.
 
 Features:
@@ -59,10 +60,40 @@ Represents wagering financial events:
 - ROLLBACK
 IdempotencyRecord
 Responsible for preventing duplicated transaction processing.
-Technologies
+## Technologies
 - TypeScript
 - NestJS
 - Vitest
 - Node.js
-Installation
+
+## Installation
+
 Install dependencies:
+
+```bash
+npm install
+```
+
+## Running tests
+
+Run automated tests:
+
+```bash
+npm run test
+```
+
+Current status:
+
+- 21 tests passing
+- Domain entities covered with automated tests
+
+## Future Improvements
+
+Possible next steps:
+
+- PostgreSQL persistence
+- Repository implementations
+- AWS SQS integration
+- Outbox pattern
+- Distributed transaction processing
+- Concurrency control
