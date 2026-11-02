@@ -38,7 +38,7 @@ src
 ## Domain Design
 
 
-## Money (Value Object)
+### Money (Value Object)
 Responsible for monetary operations and financial rules.
 
 Features:
@@ -48,7 +48,7 @@ Features:
 - Prevention of invalid monetary states
 
 
-## Wallet (Aggregate Root)
+### Wallet (Aggregate Root)
 
 
 Responsible for maintaining wallet consistency.
@@ -59,7 +59,7 @@ Responsibilities:
 - Protect wallet invariants
 
 
-## WagerTransaction (Domain Entity)
+### WagerTransaction (Domain Entity)
 
 
 Represents wagering financial events:
