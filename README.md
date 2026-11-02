@@ -36,6 +36,8 @@ src
 ```
 
 ## Domain Design
+
+
 ## Money (Value Object)
 Responsible for monetary operations and financial rules.
 
@@ -44,22 +46,35 @@ Features:
 - Currency validation
 - Addition and subtraction operations
 - Prevention of invalid monetary states
-Wallet (Aggregate Root)
+
+
+## Wallet (Aggregate Root)
+
+
 Responsible for maintaining wallet consistency.
 
 Responsibilities:
 - Manage balance changes
 - Validate debit operations
 - Protect wallet invariants
-WagerTransaction (Domain Entity)
+
+
+## WagerTransaction (Domain Entity)
+
+
 Represents wagering financial events:
 - BET
 - WIN
 - LOSS
 - REFUND
 - ROLLBACK
-IdempotencyRecord
+
+
+## IdempotencyRecord
+
+
 Responsible for preventing duplicated transaction processing.
+
 ## Technologies
 - TypeScript
 - NestJS
